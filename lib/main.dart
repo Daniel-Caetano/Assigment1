@@ -1,18 +1,21 @@
+//AUTOR: DANIEL CAETANO DE SOUZA FERREIRA
+//Code for the udemy course
+//Assigment 1?:Flutter & Dart - The Complete Guide [2021 Edition]!
+//1) Create a new Flutter App (in this project) and output an AppBar and some text
+// below it ( COMMIT 1)
+// 2) Add a button which changes the text (to any other text of your choice)COMMIT 2
+// 3) Split the app into three widgets: App, TextControl & Text COMMIT 3
+
 import 'package:flutter/material.dart';
+import 'text_control.dart';
 
 main() {
   runApp(App());
 }
 
-class App extends StatefulWidget {
-  @override
-  _AppState createState() => _AppState();
-}
-
-class _AppState extends State<App> {
-  var _textTitle = "This will change!?";
-  var _textBody = "This will change!???";
-  var _textButton = "This will change!???????";
+class App extends StatelessWidget {
+  var _textTitle =
+      "Assigment 1?:Flutter & Dart - The Complete Guide [2021 Edition]!";
 
   @override
   Widget build(BuildContext context) {
@@ -21,26 +24,7 @@ class _AppState extends State<App> {
         appBar: AppBar(
           title: Text(_textTitle),
         ),
-        body: Center(
-          child: Column(
-            children: [
-              Text(_textBody),
-              RaisedButton(
-                child: Text(_textButton),
-                textColor: Colors.blue,
-                onPressed: () {
-                  setState(
-                    () {
-                      _textTitle = "YES!!";
-                      _textBody = "YES!!";
-                      _textButton = "YES!!!!";
-                    },
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
+        body: TextControl(),
       ),
     );
   }
