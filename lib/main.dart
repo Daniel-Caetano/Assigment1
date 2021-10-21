@@ -1,7 +1,7 @@
 //AUTOR: DANIEL CAETANO DE SOUZA FERREIRA
 //Code for the udemy course
-//Assigment 1?:Flutter & Dart - The Complete Guide [2021 Edition]!
-//1) Create a new Flutter App (in this project) and output an AppBar and some text
+//Assigment 1!:Flutter & Dart - The Complete Guide [2021 Edition]!
+//1) Create a new Flutter App and output an AppBar and some text
 // below it ( COMMIT 1)
 // 2) Add a button which changes the text (to any other text of your choice)COMMIT 2
 // 3) Split the app into three widgets: App, TextControl & Text COMMIT 3
